@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Patience, persistence and perspiration make an unbeatable combination for success
+ * main - entry point
  *
  * Return: 0
  */
@@ -9,13 +9,13 @@ int main(void)
 {
 	int i;
 
-	for (i = 0;i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
 	putchar(i + '0');
 	if (i < 9)
 	{
 	putchar(',');
-        putchar(' ');
+	putchar(' ');
 	}
 	}
 	putchar('\n');
