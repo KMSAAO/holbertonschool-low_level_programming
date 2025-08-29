@@ -2,6 +2,7 @@
 /**
  * main - entry point
  *
+ * Description: typing all alphabet
  * Return: 0
  */
 
