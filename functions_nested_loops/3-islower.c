@@ -1,6 +1,6 @@
 #include "main.h"
 #include <ctype.h>
-/** 
+/**
  * _islower - entry point
  *
  * Return: 0
@@ -14,6 +14,6 @@ int _islower(int c)
 	}
 	else
 	{
-	return(0);
+	return (0);
 	}
 }
