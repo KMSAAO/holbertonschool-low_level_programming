@@ -2,7 +2,7 @@
 #include <ctype.h>
 /**
  * _islower - entry point
- *
+ * Description: function type 1 if is lower and 0 if its A
  * Return: 0
  */
 
