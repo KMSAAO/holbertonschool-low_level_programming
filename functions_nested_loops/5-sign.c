@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * print_sign - entry point
- * @n: int 
+ * @n: int
  *
- * Return:0 
+ * Return:0
  */
 
 int print_sign(int n)
