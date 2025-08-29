@@ -3,6 +3,7 @@
 /**
  * _islower - entry point
  * Description: function type 1 if is lower and 0 if its A
+ * @c: its int
  * Return: 0
  */
 
