@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - entry point
- *
+ * print_alphabet - entry point
  * Description: typing all alphabet
  * Return: 0
+ *
  */
 
 void print_alphabet(void)
