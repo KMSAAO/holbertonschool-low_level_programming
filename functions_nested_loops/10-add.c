@@ -8,8 +8,6 @@
 
 int add(int i, int x)
 {
-	int u = i + x;
-
-	_putchar(u + '0');
+	int u = i + x
 	return (u);
 }
