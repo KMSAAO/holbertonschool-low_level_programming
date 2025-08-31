@@ -4,7 +4,7 @@
  * _isupper - entry point
  *
  * @c: int
- * 
+ *
  * Return: 1 if is uppercase and 0 otherwise
  */
 
