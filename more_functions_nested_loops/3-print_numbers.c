@@ -2,7 +2,7 @@
 /**
  * print_numbers - entry point
  *
- * Return: void
+ * Return: 0
  */
 
 void print_numbers(void)
@@ -14,6 +14,4 @@ void print_numbers(void)
 		_putchar(i + '0');
 	}
 	_putchar('\n');
-
-	return;
 }
