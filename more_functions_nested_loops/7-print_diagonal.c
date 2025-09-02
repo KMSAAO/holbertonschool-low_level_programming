@@ -9,7 +9,8 @@
 
 void print_diagonal(int n)
 {
-	int i = 0;
+	int i = 1;
+	int times = 0;
 	int u;
 
 	if (n <= 0)
@@ -20,13 +21,14 @@ void print_diagonal(int n)
 	{
 		while (i <= n)
 		{
-			for (u = 0; u < i; u++)
+			for (u = 1; u < i; u++)
 			{
 				_putchar(' ');
 			}
 			_putchar('\\');
 			_putchar('\n');
 			i++;
+			times++;
 		}
 	}
 }
