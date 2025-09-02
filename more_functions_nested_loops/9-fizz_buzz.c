@@ -25,15 +25,20 @@ int main(void)
 		{
 			printf("%d ", num);
 		}
-		else if (num == 5 * mul5)
+		else if (num == 100)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 			mul5++;
 		}
 		else if (num == 3 * mul3)
 		{
 			printf("Fizz ");
 			mul3++;
+		}
+		else if (num == 5 * mul5)
+		{
+			printf("Buzz ");
+			mul5++;
 		}
 	}
 	printf("\n");
