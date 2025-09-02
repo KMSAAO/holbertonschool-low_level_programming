@@ -2,6 +2,7 @@
 #define MYHEADER_H
 
 void print_line(int n);
+void print_diagonal(int n);
 int _isupper(int c);
 int _isdigit(int c);
 int _putchar(char c);
