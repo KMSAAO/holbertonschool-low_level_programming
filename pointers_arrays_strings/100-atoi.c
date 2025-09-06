@@ -19,13 +19,10 @@ int _atoi(char *s)
 	}
 	while (s[i] >= '0' && s[i] <= '9')
 	{
-		if (result > 214748364 || (result == 214748364 && s[i] - '0' > 7))
-		{
-			if (sign == 1)
-				return (2147483647);
-			else
-				return (-2147483647);
-		}
+		if (result > 214748364)
+			return (sign == 1 ? 2147483647 : -2147483648);
+		if (result == 214748364 && s[i] - '0' > 7 + (sign == -1))
+			return (sign == 1 ? 2147483647 : -2147483648);
 		result = result * 10 + (s[i] - '0');
 		i++;
 	}
