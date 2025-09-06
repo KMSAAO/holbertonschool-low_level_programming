@@ -10,6 +10,7 @@ int _atoi(char *s)
 	int i = 0;
 	int sign = 1;
 	int result = 0;
+	int digit;
 
 	while (s[i] && (s[i] < '0' || s[i] > '9'))
 	{
@@ -19,12 +20,21 @@ int _atoi(char *s)
 	}
 	while (s[i] >= '0' && s[i] <= '9')
 	{
-		if (result > 214748364)
-			return (sign == 1 ? 2147483647 : -2147483648);
-		if (result == 214748364 && s[i] - '0' > 7 + (sign == -1))
-			return (sign == 1 ? 2147483647 : -2147483648);
-		result = result * 10 + (s[i] - '0');
-		i++;
+		digit = s[i] - '0';
+
+		if (sign == 1)
+		{
+			if (result > 214748364 || (result == 214748364 && digit > 7))
+				return (2147483647);
+			result = result * 10 + digit;
+		}
+		else
+		{
+			if (result < -214748364 || (result == -214748364 && digit > 8))
+				return (-2147483648);
+			result = result * 10 + (s[i] - '0');
+		}
+		i++
 	}
 	if (sign == -1)
 		return (-result);
