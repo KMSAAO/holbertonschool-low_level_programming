@@ -34,7 +34,7 @@ int _atoi(char *s)
 				return (-2147483648);
 			result = result * 10 + (s[i] - '0');
 		}
-		i++
+		i++;
 	}
 	if (sign == -1)
 		return (-result);
