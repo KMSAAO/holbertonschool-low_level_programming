@@ -22,9 +22,9 @@ int _atoi(char *s)
 		if (result > 214748364 || (result == 214748364 && s[i] - '0' > 7))
 		{
 			if (sign == 1)
-				return (2147483647)
+				return (2147483647);
 			else
-				return (-2147483647)
+				return (-2147483647);
 		}
 		result = result * 10 + (s[i] - '0');
 		i++;
