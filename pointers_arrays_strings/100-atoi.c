@@ -28,5 +28,10 @@ int _atoi(char *s)
 			return (-2147483648);
 		i++;
 	}
-	return (sign == 1 ? (int)result : -(int)result);
+
+	if (sign == 1)
+		return ((int)result);
+	if (result == 2147483648)
+		return (-2147483648);
+		return (-(int)result);
 }
