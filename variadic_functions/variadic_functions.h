@@ -3,6 +3,11 @@
 
 #include <stdarg.h>
 
+/**
+ * struct printer - dlksgh
+ * @symbol: hgls
+ * @print: ksdj
+ */
 typedef struct printer
 {
 	char *symbol;
