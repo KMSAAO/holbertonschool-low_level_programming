@@ -38,7 +38,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * of_div - division
+ * op_div - division
  * @a: first num
  * @b: second num
  * Return: the divsion of a by b
@@ -50,7 +50,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_ mod - remainder of the division
+ * op_mod - remainder of the division
  * @a: first num
  * @b: second num
  * Return: remainder of the division of a by b
