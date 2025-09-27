@@ -1,6 +1,10 @@
 #ifndef HEADER_H
 #define HEADER_H
-
+/**
+ * struct op - ent
+ * @op: char
+ * @f: int
+ */
 typedef struct op
 {
 	char *op;
