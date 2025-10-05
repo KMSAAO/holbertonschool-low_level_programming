@@ -1,4 +1,6 @@
-#bash
+#!/bin/bash
+read -p 'Enter your commits: ' commit
+
 git add .
-git commit -m "new file"
+git commit -m "$commit"
 git push
