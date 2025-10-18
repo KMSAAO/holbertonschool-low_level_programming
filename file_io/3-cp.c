@@ -1,25 +1,25 @@
 #include "main.h"
-#include <fcntl.h>
-#include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 #define BUFFER_SIZE 1024
 
 /**
- * error_exit - prints an error message and exits with a code
- * @code: exit status
- * @message: format string for error
- * @arg: argument for format
+ * error_exit - print error message and exit
+ * @code: exit code
+ * @msg: error message format
+ * @arg: string argument
  */
-void error_exit(int code, const char *message, const char *arg)
+void error_exit(int code, const char *msg, const char *arg)
 {
-	dprintf(STDERR_FILENO, message, arg);
+	dprintf(STDERR_FILENO, msg, arg);
 	exit(code);
 }
 
 /**
- * close_fd - closes a file descriptor and handles errors
+ * close_fd - close file descriptor and handle errors
  * @fd: file descriptor
  */
 void close_fd(int fd)
@@ -32,8 +32,8 @@ void close_fd(int fd)
 }
 
 /**
- * main - copies the content of a file to another file
- * @argc: number of arguments
+ * main - copy the content of a file to another
+ * @argc: argument count
  * @argv: argument vector
  *
  * Return: 0 on success
