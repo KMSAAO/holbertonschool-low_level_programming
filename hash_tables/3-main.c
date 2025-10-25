@@ -11,8 +11,11 @@
 int main(void)
 {
     hash_table_t *ht;
+    
 
     ht = hash_table_create(1024);
     hash_table_set(ht, "C", "is fun");
+    hash_table_set(ht, "C", "kkk");
+
     return (EXIT_SUCCESS);
 }
